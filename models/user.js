@@ -31,8 +31,7 @@ const schema = new mongoose.Schema({
     required: [true, "Please Enter domestic animal"],
   },
   animalName_count:{
-    type:String,
-    required: [true, "Please Enter animal name and count"],
+    type:String,    
   },
   createdAt: {
     type: Date,
