@@ -21,8 +21,7 @@ export const userRegister = catchAsyncError(async (req, res, next) => {
     !income ||
     !crops_harvest ||
     !land_area ||
-    !domestic_animal ||
-    !animalName_count
+    !domestic_animal
   )
     return next(new ErrorHandler("Please Enter All Field", 400));
 
