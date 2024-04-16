@@ -1,6 +1,6 @@
 import express from "express";
 import { config } from "dotenv";
-// import cors from "cors";
+import cors from "cors";
 import cookieParser from "cookie-parser";
 
 
@@ -18,6 +18,15 @@ app.use(
   })
 );
 app.use(cookieParser());
+
+
+app.use(
+  cors({
+    origin: ["https://dhanlakshmifrontend.vercel.app","http://localhost:3000"],
+    credentials: true,
+    methods: ["GET", "POST", "DELETE", "PUT"],
+  })
+);
 
 
 
