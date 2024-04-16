@@ -30,7 +30,7 @@ const schema = new mongoose.Schema({
     type:String,
     required: [true, "Please Enter domestic animal"],
   },
-  animalName_count:{
+  animal_count:{
     type:String,    
   },
   createdAt: {

@@ -11,7 +11,7 @@ export const userRegister = catchAsyncError(async (req, res, next) => {
     crops_harvest,
     land_area,
     domestic_animal,
-    animalName_count,
+    animal_count,
   } = req.body;
 
   if (
@@ -33,7 +33,7 @@ export const userRegister = catchAsyncError(async (req, res, next) => {
     crops_harvest,
     land_area,
     domestic_animal,
-    animalName_count,
+    animal_count,
   });
 
   res.status(201).json({
