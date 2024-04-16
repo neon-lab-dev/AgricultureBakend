@@ -15,12 +15,12 @@ const schema = new mongoose.Schema({
     required: [true, "Please Enter Address"],
   },
   income: {
-    type: Number,
-    required: [true, "Please Enter city"],
+    type: String,
+    required: [true, "Please Enter Income"],
   },
   crops_harvest:{
     type: String,
-    required: [true, "Please enter your message"],
+    required: [true, "Please enter your crops_harvest"],
   },
   land_area: {
     type: Number,
