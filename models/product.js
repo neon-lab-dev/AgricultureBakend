@@ -4,7 +4,6 @@ const schema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, "Please Enter your product name"],
-    index: true,
   },
   description: {
     type: String,       

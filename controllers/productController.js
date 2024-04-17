@@ -9,6 +9,7 @@ export const createProduct = catchAsyncError(async (req, res, next) => {
   const { name, description, category, available_packs, price } = req.body;
   const file = req.file;
 
+
   if (!name || !description || !category || !available_packs || !file || !price)
     return next(
       new ErrorHandler(
