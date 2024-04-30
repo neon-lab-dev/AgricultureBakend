@@ -14,19 +14,8 @@ const schema = new mongoose.Schema({
     type: String,
     required: [true, "Please Enter Address"],
   },
-  income: {
-    type: String,
-    required: [true, "Please Enter Income"],
-  },
-  crops_harvest:{
-    type: String,
-    required: [true, "Please enter your crops_harvest"],
-  },
-  land_area: {
-    type: Number,
-    required: [true, "Please Enter land area"],
-  },
-  domestic_animal:{
+ 
+   domestic_animal:{
     type:String,
     required: [true, "Please Enter domestic animal"],
   },

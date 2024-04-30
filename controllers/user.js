@@ -7,31 +7,17 @@ export const userRegister = catchAsyncError(async (req, res, next) => {
     name,
     contact_number,
     address,
-    income,
-    crops_harvest,
-    land_area,
     domestic_animal,
     animal_count,
   } = req.body;
 
-  if (
-    !name ||
-    !contact_number ||
-    !address ||
-    !income ||
-    !crops_harvest ||
-    !land_area ||
-    !domestic_animal
-  )
+  if (!name || !contact_number || !address || !domestic_animal)
     return next(new ErrorHandler("Please Enter All Field", 400));
 
   await User.create({
     name,
     contact_number,
     address,
-    income,
-    crops_harvest,
-    land_area,
     domestic_animal,
     animal_count,
   });
