@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ["https://dhanlakshmifrontend.vercel.app","http://localhost:3000","https://dhanlakshmi-admin-panel.vercel.app"],
+    origin: ["https://dhanlakshmifrontend.vercel.app","http://localhost:3000","https://dhanlakshmi-admin-panel.vercel.app","https://www.dhanlakshmiherbalorganics.com","https://dhanlakshmiherbalorganics.com","www.dhanlakshmiherbalorganics.com"],
     credentials: true,
     methods: ["GET", "POST", "DELETE", "PUT"],
   })
